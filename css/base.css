@@ -13,7 +13,7 @@ html,
 body {
   margin: 0;
   background-color: #e7e7e7;
-  font-size: 12px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,17 +62,71 @@ li:before {
   margin-bottom: 0.2rem;
 }
 
+table {
+  width: 100%;
+  position: relative;
+  padding-top: 3px;
+  border-bottom: 3px solid var(--primary);
+  border-collapse: collapse;
+}
+
+table:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  display: block;
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--secondary) 50%,
+    var(--primary) 50%
+  );
+}
+
+th {
+  color: var(--primary);
+}
+
+td,
+th {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f6f6f6;
+  text-align: center;
+}
+
+tr:last-child td,
+tr:last-child th {
+  border-bottom: none;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
 section {
   margin-bottom: 5rem;
 }
 
-.primary-text {
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.text-primary {
   color: var(--primary);
 }
 
 .proposal {
   background: #fff;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   margin: auto;
   padding: 1rem 2rem;
@@ -81,6 +135,14 @@ section {
 
 .header {
   margin-bottom: 5rem;
+}
+
+.quote {
+  border-bottom: none;
+}
+
+.quote tr:nth-last-child(2) td {
+  border-bottom: 3px solid var(--primary);
 }
 
 @media only screen and (min-width: 520px) {
