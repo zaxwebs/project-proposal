@@ -46,6 +46,10 @@ h2:before {
   margin-bottom: 0.8rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
@@ -141,8 +145,16 @@ footer a {
   color: #fff;
 }
 
+p {
+  margin-bottom: 2rem;
+}
+
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 .text-primary {
@@ -163,6 +175,7 @@ footer a {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -193,13 +206,34 @@ footer a {
   flex-wrap: wrap;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 630px) {
+  .col-l-4 {
+    flex: calc(50% - 3px) 0 0;
+  }
+}
+
 @media only screen and (min-width: 830px) {
-  ul.split {
+  .col-2 {
     display: flex;
     flex-wrap: wrap;
   }
 
-  ul.split li {
+  .col-2 > * {
+    flex: 50% 0 0;
+  }
+
+  .col-l-4 {
+    flex: calc(100% / 3 - 5px) 0 0;
+    margin-bottom: 2.5px;
+  }
+
+  ul.col-2 li {
     flex: 50% 0 0;
     padding-right: 2rem;
   }
