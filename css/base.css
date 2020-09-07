@@ -134,6 +134,7 @@ a.contact {
 
 footer {
   background: var(--primary);
+  min-height: 100px;
 }
 
 footer a {
