@@ -162,6 +162,20 @@ footer a {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  max-height: 30px;
+}
+
+.header .identifiers {
+  text-align: right;
+  color: #686868;
+}
+
+.cover {
   margin-bottom: 5rem;
 }
 
