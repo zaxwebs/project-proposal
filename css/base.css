@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 :root {
   --primary: #8235f7;
@@ -13,7 +13,8 @@ html,
 body {
   margin: 0;
   background-color: #e7e7e7;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,6 +22,7 @@ h1,
 h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -65,7 +67,7 @@ li:before {
 table {
   width: 100%;
   position: relative;
-  padding-top: 3px;
+  padding: 3px;
   border-bottom: 3px solid var(--primary);
   border-collapse: collapse;
 }
@@ -116,6 +118,11 @@ section {
   margin-bottom: 5rem;
 }
 
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -126,7 +133,7 @@ section {
 
 .proposal {
   background: #fff;
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
   margin: auto;
   padding: 1rem 2rem;
@@ -145,10 +152,19 @@ section {
   border-bottom: 3px solid var(--primary);
 }
 
-@media only screen and (min-width: 520px) {
+a.contact {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 830px) {
   .proposal {
     margin-top: 3rem;
-    padding: 1rem 4rem;
+    margin-bottom: 3rem;
+    padding: 1rem 5rem;
   }
 
   ul.split {
