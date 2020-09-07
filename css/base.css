@@ -124,6 +124,22 @@ a {
   text-decoration: none;
 }
 
+a.contact {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: var(--primary);
+}
+
+footer a {
+  color: #fff;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -132,12 +148,15 @@ a {
   color: var(--primary);
 }
 
+.p-a {
+  padding: 1rem 2rem;
+}
+
 .proposal {
   background: #fff;
   max-width: 800px;
   width: 100%;
   margin: auto;
-  padding: 1rem 2rem;
   border-top: 0.5rem solid var(--primary);
 }
 
@@ -153,21 +172,13 @@ a {
   border-bottom: 3px solid var(--primary);
 }
 
-a.contact {
-  display: block;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--primary);
-  margin-bottom: 1rem;
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 830px) {
-  .proposal {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 1rem 5rem;
-  }
-
   ul.split {
     display: flex;
     flex-wrap: wrap;
@@ -176,5 +187,14 @@ a.contact {
   ul.split li {
     flex: 50% 0 0;
     padding-right: 2rem;
+  }
+
+  .p-a {
+    padding: 1rem 5rem;
+  }
+
+  .proposal {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
