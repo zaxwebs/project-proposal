@@ -206,34 +206,35 @@ p {
   flex-wrap: wrap;
 }
 
-.row {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 630px) {
-  .col-l-4 {
+  .gallery-item {
     flex: calc(50% - 3px) 0 0;
   }
 }
 
 @media only screen and (min-width: 830px) {
-  .col-2 {
+  ul.split {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .col-2 > * {
+  ul.split > * {
     flex: 50% 0 0;
   }
 
-  .col-l-4 {
+  .gallery-item {
     flex: calc(100% / 3 - 5px) 0 0;
     margin-bottom: 2.5px;
   }
 
-  ul.col-2 li {
+  ul.split li {
     flex: 50% 0 0;
     padding-right: 2rem;
   }
