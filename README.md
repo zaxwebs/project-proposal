@@ -2,7 +2,7 @@
 
 Live Demo: https://proposal-ava.netlify.app/
 
-A template for responsive proposals that can be used for web design, development and illustration among many other things.
+A template for responsive proposals that can be used for web design, development, and illustration among many other things.
 Power up your project proposal game with an online proposal.
 
 ## Sections
